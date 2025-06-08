@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.snakegameandroid"
-    compileSdk = 34
+    compileSdk = 34 // Explicitly specify compileSdkVersion
 
     defaultConfig {
         applicationId = "com.example.snakegameandroid"
