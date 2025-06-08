@@ -1,11 +1,11 @@
 plugins {
-    id("com.android.application") version "8.2.2"
+    id("com.android.application") version "8.6.0"
     id("org.jetbrains.kotlin.android") version "1.9.22"
 }
 
 android {
     namespace = "com.android.snakegameandroid"
-    compileSdk = 34 // Explicitly specify compileSdkVersion
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.android.snakegameandroid"
@@ -57,6 +57,6 @@ dependencies {
     implementation(libs.ui)
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
-    implementation(libs.material3)
+    implementation("androidx.compose.material3:material3") // Add Material3 dependency
     debugImplementation(libs.ui.tooling)
 }

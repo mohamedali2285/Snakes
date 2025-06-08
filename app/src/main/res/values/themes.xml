@@ -2,8 +2,6 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SnakeGameAndroid" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/my_light_primary</item>
     </style>
 
@@ -14,7 +12,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.SnakeGameAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.SnakeGameAndroid.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
 
-    <style name="Theme.SnakeGameAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.SnakeGameAndroid.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
 </resources>
