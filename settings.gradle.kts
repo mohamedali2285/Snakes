@@ -5,8 +5,8 @@ pluginManagement {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.2.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+        classpath("com.android.tools.build:gradle:${rootProject.extensions.findByName("androidGradlePlugin") ?: "8.2.2"}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extensions.findByName("kotlinAndroid") ?: "1.9.22"}")
     }
 }
 dependencyResolutionManagement {
@@ -14,6 +14,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+    }
+}
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("gradle/libs.versions.toml"))
+        }
     }
 }
 
