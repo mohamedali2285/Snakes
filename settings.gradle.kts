@@ -4,9 +4,9 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
-    dependencies {
-        classpath("com.android.tools.build:gradle:${rootProject.extensions.findByName("androidGradlePlugin") ?: "8.2.2"}")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extensions.findByName("kotlinAndroid") ?: "1.9.22"}")
+    plugins {
+        id("com.android.application") version "8.2.2" apply false
+        id("org.jetbrains.kotlin.android") version "1.9.22" apply false
     }
 }
 dependencyResolutionManagement {
