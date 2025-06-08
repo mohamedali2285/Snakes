@@ -3,6 +3,9 @@
     <style name="Base.Theme.SnakeGameAndroid" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorSecondary">@color/my_light_secondary</item>
+        <item name="colorTertiary">@color/my_light_tertiary</item>
+        <item name="android:textColor">@color/my_text_color</item>
     </style>
 
     <style name="Theme.SnakeGameAndroid" parent="Base.Theme.SnakeGameAndroid" />
